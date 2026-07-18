@@ -7,7 +7,6 @@ import time
 import platform
 import psutil
 
-# Настройки инициализации графического конвейера
 os.environ["QT_ANGLE_PLATFORM"] = "d3d9"
 os.environ["QT_MEDIA_BACKEND"] = "windowsmediafoundation"
 os.environ["QT_WMF_ALLOW_HARDWARE_DECODING"] = "1"
@@ -29,7 +28,6 @@ if platform.system() == "Windows":
 else:
     WIN_SUPPORT = False
 
-# Глобальный конфигуратор производительности и локализации
 APP_SETTINGS = {
     "priority_mode": "BALANCED",  # "BALANCED", "CPU", "MEM"
     "lang": "RU"                  # "RU" или "ENG"
